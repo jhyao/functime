@@ -1,6 +1,10 @@
 """
 This moudle provides a simple way to time a function.
 """
+name = 'functime'
+
+__all__ = ['func_time']
+
 import time
 import functools
 
@@ -28,7 +32,7 @@ def timer(func, times=1):
     return run_time
 
 
-def timer_auto(func, *args, **kwargs):
+def func_time(func, *args, **kwargs):
     """
     Recommended function.
     Time func with its arguments followed by func.
