@@ -13,6 +13,7 @@ out:
 ```
 sorted AVG(1000000): 0.537999us
 ```
+## api
 This moudle provides a simple way to time a function.
-* timer_auto(func, *args, **kwargs):
-  Recommended function.Time func with its arguments followed by func.Call timer(func, times) repeatedly with times set to (10, 100, 1000, ...) so that the total time >= 0.2.Print average run time with readable format.
+* func_time(func, *args, **kwargs):
+  Time func with arguments.Run repeatedly with times set to (10, 100, 1000, ...) until the total time >= 0.2s. Print average run time with readable format.
